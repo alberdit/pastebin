@@ -1,5 +1,5 @@
 <%= form_with(model: paste) do |form| %>
-  <% if paste.errors.any? %>
+  <% if  paste.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(paste.errors.count, "error") %> prohibited this paste from being saved:</h2>
 
@@ -10,19 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :paste, style: "display: block" %>
-    <%= form.text_area :paste %>
-  </div>
-
-  <div>
-    <%= form.label :title, style: "display: block" %>
+<div>
+    <%= form.label :Title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
   <div>
-    <%= form.label :access_id, style: "display: block" %>
+    <%= form.label :paste, style: "display: block" %>
+    <%= form.text_area :paste, class:".formtext" %>
+  </div>
+
+  <div>
+    <%= form.label :"Access Link" , style: "display: block" %>
     <%= form.text_field :access_id %>
   </div>
 

@@ -13,6 +13,7 @@ class PastesController < ApplicationController
   # GET /pastes/new
   def new
     @paste = Paste.new
+    @pastes = Paste.all
   end
 
   # GET /pastes/1/edit

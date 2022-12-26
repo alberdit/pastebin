@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pastes</h1>
+
+<div id="pastes">
+  <% @pastes.each do |paste| %>
+    <%= render paste %>
+    <p>
+      <%= link_to "Show this paste", paste %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New paste", new_paste_path %>

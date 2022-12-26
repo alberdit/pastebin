@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <center>
   <head>
     <title>Pastebin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,8 +10,12 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
-    <%= yield %>
+  <body bgcolor="#F8F9F9">
+  <table border="0" width="100%" heith="100%">
+    <tr>
+      <td><center><%= yield %></center></td>
+    </tr>
+  </table>
   </body>
+  </center>
 </html>
