@@ -18,7 +18,7 @@
     height: 2px;
     background-image: linear-gradient(to right, transparent, #CCC, transparent);  
 }
-form.text {
+.formtext {
     width: 200px;
     border: 2;
     height: 21px;
