@@ -4,20 +4,16 @@
     <h1>New paste</h1>
     <%= render "form", paste: @paste %>
   </td>
-  <td align="center" >
+  <td width="20" align="center" >
 
 
   <% @pastes.each do |paste| %>
   <div>
 
     <%= render paste %>
-    <%= link_to "Show this paste", paste %>
+    <%= link_to "Show", paste %> 
     <hr class="hr3">
   <% end %>
-</div>
-
-<div>
-  <%= link_to "Back to pastes", pastes_path %>
 </div>
   
   </td>
